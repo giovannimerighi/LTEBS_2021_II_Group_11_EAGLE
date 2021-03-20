@@ -59,7 +59,7 @@
 </layers>
 <library>
 <packages>
-<package name="QFN16">
+<package name="QFN-16">
 <smd name="2" x="-0.8" y="0.2" dx="0.6" dy="0.2" layer="1"/>
 <smd name="3" x="-0.8" y="-0.2" dx="0.6" dy="0.2" layer="1"/>
 <smd name="4" x="-0.8" y="-0.6" dx="0.6" dy="0.2" layer="1"/>
@@ -183,19 +183,20 @@ use in a broad array of applications from personal
 electronics to building automation applications. The
 device supports bidirectional analog and digital
 signals on the source (Sx) and drain (D) pins ranging
-from GND to VDD
+from GND to VDD.
 
 &lt;p&gt;
 
 Available packages:
 &lt;ul&gt;
-&lt;li&gt;QFN16
+&lt;li&gt;QFN-16
+&lt;li&gt;TSSOP-16
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TMUX1208" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD" package="QFN16">
+<device name="SMD" package="QFN-16">
 <connects>
 <connect gate="G$1" pin="A0" pad="15"/>
 <connect gate="G$1" pin="A1" pad="14"/>
@@ -223,7 +224,8 @@ Available packages:
 <deviceset name="TCA9546A">
 <description>&lt;h3&gt;TCA9546A&lt;/h3&gt;
 
-The TCA9546A is a quad bidirectional translating switch controlled via the I^2C bus. The SCL/SDA upstream pair fans out to four downstream pairs, or channels. Any individual SCn/SDn channel or combination of channels can be selected, determined by the contents of the programmable control register&lt;p&gt;
+The TCA9546A is a quad bidirectional translating switch controlled via the I^2C bus. The SCL/SDA upstream pair fans out to four downstream pairs, or channels. Any individual SCn/SDn channel or combination of channels can be selected, determined by the contents of the programmable control register. 
+&lt;p&gt;
 
 Available Packages:
 &lt;ul&gt;
