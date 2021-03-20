@@ -6260,7 +6260,7 @@ Available Packages:
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="0.1uF"/>
 <part name="U1" library="SparkFun-IC-Power" deviceset="V_REG_78XX" device="7812" value="+12v"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
-<part name="R11" library="SparkFun-Sensors" deviceset="PHOTOCELL" device="PTH"/>
+<part name="R10" library="SparkFun-Sensors" deviceset="PHOTOCELL" device="PTH"/>
 <part name="U2" library="SparkFun-Sensors" deviceset="TMP36" device="GT9"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="1206" value="BLUE"/>
 <part name="U$2" library="CY8KIT-059" deviceset="CY8CKIT-059_TARGET" device=""/>
@@ -6300,7 +6300,7 @@ Available Packages:
 <part name="R8" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0603-1/10W-1%" value="4.7k"/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
-<part name="R10" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="R11" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -6373,7 +6373,7 @@ through these connectors. </text>
 <attribute name="VALUE" x="215.9" y="66.294" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="215.9" y="76.708" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="R11" gate="G$1" x="33.02" y="93.98" smashed="yes" rot="R90">
+<instance part="R10" gate="G$1" x="33.02" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="30.226" y="93.98" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="35.814" y="93.98" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
@@ -6515,7 +6515,7 @@ through these connectors. </text>
 <instance part="SUPPLY10" gate="G$1" x="259.08" y="149.86" smashed="yes">
 <attribute name="VALUE" x="259.08" y="152.654" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R10" gate="G$1" x="33.02" y="73.66" smashed="yes" rot="R90">
+<instance part="R11" gate="G$1" x="33.02" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="31.496" y="73.66" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="34.544" y="73.66" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
@@ -6604,7 +6604,7 @@ through these connectors. </text>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="60.96" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6735,7 +6735,7 @@ through these connectors. </text>
 <pinref part="SUPPLY10" gate="G$1" pin="5V"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="P$2"/>
+<pinref part="R10" gate="G$1" pin="P$2"/>
 <pinref part="SUPPLY11" gate="G$1" pin="5V"/>
 <wire x1="33.02" y1="101.6" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
 </segment>
@@ -6770,8 +6770,8 @@ through these connectors. </text>
 </net>
 <net name="PHOTO_OUT" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="R11" gate="G$1" pin="P$1"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="P$1"/>
 <wire x1="33.02" y1="78.74" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="81.28" x2="33.02" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="81.28" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
@@ -6822,18 +6822,6 @@ through these connectors. </text>
 <pinref part="U$2" gate="G$1" pin="P_1.4"/>
 <wire x1="129.54" y1="88.9" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
 <label x="129.54" y="104.14" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="I2C_SDL" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="P_12.0"/>
-<wire x1="142.24" y1="88.9" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
-<label x="142.24" y="96.52" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="SCL"/>
-<wire x1="226.06" y1="149.86" x2="231.14" y2="149.86" width="0.1524" layer="91"/>
-<label x="231.14" y="149.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_A2" class="0">
@@ -6981,6 +6969,18 @@ through these connectors. </text>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="134.62" x2="243.84" y2="134.62" width="0.1524" layer="91"/>
 <label x="228.6" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C_SCL" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SCL"/>
+<wire x1="226.06" y1="149.86" x2="231.14" y2="149.86" width="0.1524" layer="91"/>
+<label x="231.14" y="149.86" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="P_12.0"/>
+<wire x1="142.24" y1="88.9" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
+<label x="142.24" y="96.52" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
