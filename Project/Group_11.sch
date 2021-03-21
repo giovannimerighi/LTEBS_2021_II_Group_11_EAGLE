@@ -6717,6 +6717,16 @@ through these connectors. </text>
 <junction x="160.02" y="127"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="434.34" y1="76.2" x2="444.5" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="444.5" y1="76.2" x2="485.14" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="485.14" y1="76.2" x2="485.14" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="444.5" y1="76.2" x2="444.5" y2="71.12" width="0.1524" layer="91"/>
+<junction x="444.5" y="76.2"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -7158,14 +7168,6 @@ through these connectors. </text>
 <pinref part="J8" gate="G$1" pin="6"/>
 <pinref part="U$3" gate="G$1" pin="S3"/>
 <wire x1="393.7" y1="101.6" x2="408.94" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="434.34" y1="76.2" x2="485.14" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="485.14" y1="76.2" x2="485.14" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="MUX_OUT/1.4C" class="0">
