@@ -1203,6 +1203,9 @@ design rules under a new name.</description>
 <vertex x="0.508" y="46.863"/>
 <vertex x="0.508" y="1.27"/>
 </polygon>
+<contactref element="C3" pad="2"/>
+<contactref element="U$3" pad="12"/>
+<wire x1="6.35" y1="29.21" x2="12.23" y2="41.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="P$2"/>
