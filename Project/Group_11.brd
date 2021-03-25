@@ -252,7 +252,7 @@
 <text x="4.572" y="16.256" size="0.6096" layer="21">69</text>
 <text x="4.699" y="13.716" size="0.6096" layer="21">70</text>
 <text x="4.699" y="11.176" size="0.6096" layer="21">71</text>
-<text x="49.403" y="42.672" size="1.4224" layer="21">Group 11</text>
+<text x="50.673" y="42.672" size="1.4224" layer="21">Group 11</text>
 <wire x1="0" y1="0" x2="0" y2="45.72" width="0.1524" layer="51"/>
 <wire x1="0" y1="45.72" x2="71.12" y2="45.72" width="0.1524" layer="51"/>
 <wire x1="71.12" y1="45.72" x2="71.12" y2="0" width="0.1524" layer="51"/>
